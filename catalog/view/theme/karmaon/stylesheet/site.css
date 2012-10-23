@@ -581,7 +581,7 @@ fieldset p {
 	margin-bottom: 4px;
 }
 
-.form-row.error input {
+.form-row.error input, .form-row.error textarea {
 	border-color: #BF0000;
 }
 
