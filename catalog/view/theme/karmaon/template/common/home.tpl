@@ -4,10 +4,10 @@
       <h1>bASIC - Next generation Bitcoin mining hardware.</h1>
       <div class="blurb">
           <p>
-            BTCFPGA's <strong>bASIC</strong> is a new line of next generation Bitcoin mining hardware that offers significant improvements from GPU-based mining rigs and FPGAs.
+            BTCFPGA's <strong>bASIC</strong> is the next generation Bitcoin mining hardware that offers significant improvements from GPU-based mining rigs and FPGAs.
           </p>
           <p>
-            Currently preorders are being accepted, and we will start shipping out these units in <strong>Novemeber-December of 2012</strong>.
+            Currently 2nd batch pre-orders are being accepted, we are scheduled to begin shipping the 2nd batch in <strong>January of 2013</strong>.
           </p>
           <div class="buttons">
             <a href="<?php echo $learn_more; ?>" class="cta button green">Pre-order Today</a>
@@ -28,7 +28,7 @@
             </div>
           </div>
           <div class="shipping">
-              Planned shippment November-December 2012
+              2nd Batch Pre-Orders Scheduled to Ship January 2013
           </div>
         </div>
         <div class="window first">
@@ -52,7 +52,7 @@
                 <tr>
                     <th class="category"></th>
                     <th class="category">Price</th>
-                    <th class="category">Power Usage</th>
+                    <th class="category">Tech Specs</th>
                     <th class="category">Mh/$</th>
                 </tr>
             </thead>
@@ -60,14 +60,14 @@
                 <tr>
                     <th class="product">27 GH/s bASIC</th>
                     <td>$599.99</td>
-                    <td>xxx kWh</td>
-                    <td>45</td>
+                    <td>6 x 90nm ASIC SHA-256 Bitcoin hashing cluster</td>
+                    <td>45.00</td>
                 </tr>
                 <tr>
                     <th class="product">54 GH/s bASIC</th>
                     <td>$1069.99</td>
-                    <td>xxx kWh</td>
-                    <td>50.4</td>
+                    <td>Dual 6 x 90nm ASIC SHA-256 Bitcoin hashing clusters</td>
+                    <td>50.46</td>
                 </tr>
             </tbody>
         </table>
@@ -77,7 +77,7 @@
          <div class="blurb">
             <h3>Low power usage</h3>
             <p>
-                Compared to soon-obsolete GPUS, ASICs offer much more effenciency and cost-effectiveness. Use up to 5 times less power than a traditional 4-card rig.
+                bASIC Bitcoin mining devices are incredibly energy efficient. bASIC units are up to 1000x more efficient when compared to previous generation devices.
             </p>
             <p>
                 Cover your legacy GPU investment.
@@ -87,15 +87,14 @@
         </li>
         <li class="odd last">
          <div class="blurb">
-            <h3>Low power usage</h3>
+            <h3>Community Roots</h3>
             <p>
-                Compared to soon-obsolete GPUS, ASICs offer much more effenciency and cost-effectiveness. Use up to 5 times less power than a traditional 4-card rig.
+                BTCFPGA is a grass roots business, our home-grown management and software development team is comprised of members highly involved in the Bitcoin community.
             </p>
             <p>
-                Cover your legacy GPU investment.
+                Many of our team members have been contributing to Bitcoin for years.
             </p>
           </div>
-          <img src="">
         </li>
       </ul>
     </div>
@@ -107,21 +106,21 @@
       </header>
       <section class="features clearfix">
         <dl>
-          <dt>We're open</dt>
+          <dt>We're experienced</dt>
           <dd>
-            The firmware that runs on our hardware is opensource. Feel free to contribute and imporove the code that supports the Bitcoin network.
+            Our previous generation product the ModMiner Quad achieved global sales at over a quarter of a million dollars and was the first ever quad FPGA Bitcoin miner, at the time of it's release it was the most efficient FPGA device available.
           </dd>
         </dl>
         <dl>
-          <dt>We've delivered in the past</dt>
+          <dt>We're Open</dt>
           <dd>
-            We're the creators of the ModMinerQuad, one of the first Bitcoin FPGAs on the market. We've delivered on time and met our energy usage expectations.
+            All of the firmware and software we develop for our devices are completely opensource.
           </dd>
         </dl>
         <dl>
-          <dt>Community and dedicated support</dt>
+          <dt>Transparency</dt>
           <dd>
-            asdfasdfasdfasdfasdf sdfad fasdf asdfasdf asdf asdfasdfdsfafasd fasdfasdfasfadsfasdfasd fadfasffdfda  sdf sf  dfasdf asd asd fasd asd asdf asd fasdfas
+            We strive on a daily basis to keep our customers updated every step of the way and our focus is to provide premium customer service, customer support, and customer contact that is rivaled by no competitor.
           </dd>
         </dl>
       </section>
@@ -136,7 +135,7 @@
             </a>
           </li>
           <li>
-            <a href="mailto:support@btcfpga.com">
+            <a href="https://btcfpga.com/">
               Email support
             </a>
           </li>

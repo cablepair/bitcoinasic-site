@@ -6,7 +6,7 @@ class ControllerCommonHome extends Controller {
 		$this->document->setBodyId('home');
 
 		$this->data['heading_title'] = $this->config->get('config_title');
-		$this->data['learn_more'] = $this->url->link('common/basic', '', 'SSL');
+		$this->data['learn_more'] = $this->url->link('product/all', '', 'SSL');
 		
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/home.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/common/home.tpl';
