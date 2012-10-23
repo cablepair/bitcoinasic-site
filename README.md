@@ -1,3 +1,3 @@
 # bitcoinasic site
 
-Hi.
+This is the repo hosting bitcoinasic's opencart changes.
