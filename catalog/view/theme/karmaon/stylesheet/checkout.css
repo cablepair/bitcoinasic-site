@@ -32,15 +32,20 @@
 #checkout .cart li .details {
 	float: left;
 	margin: 9px 0 0 30px;
+	width: 200px;
 }
 
 #checkout .cart li .details h3 {
 	font-weight: bold;
 	color: #656565;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 #checkout .cart li .details h4 {
 	color: #A5A5A5;
+	margin-top: 4px;
 }
 
 #checkout .cart .controls {
