@@ -6,7 +6,7 @@
                 <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
                 <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
                 <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
-                <li><a href="<?php echo $about; ?>"><?php echo $text_sitemap; ?></a></li>
+                <li><a href="<?php echo $about; ?>"><?php echo $text_about; ?></a></li>
               </ul>
             </nav>
             <nav>
