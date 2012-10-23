@@ -7,21 +7,23 @@
 	float: left;
 }
 
-#product .images img.primary {
+#product .images .primary img {
 	border-radius: 4px;
 	padding: 10px;
 	background: #FFF;
 	display: block;
-	float: left;
+	width: 320px;
 	box-shadow: rgba(0, 0, 0, .1) 0 1px 2px;
 }
 
 #product .images ul {
-	float: right;
+	margin: 20px -6px 0 -6px;
 }
 
 #product .images ul li {
 	margin-bottom: 5px;
+	float: left;
+	margin: 0 6px;
 }
 
 #product .images ul li img {
@@ -29,6 +31,7 @@
 	padding: 4px;
 	background: #FFF;
 	display: block;
+	width: 68px;
 	box-shadow: rgba(0, 0, 0, .1) 0 1px 2px;
 }
 
@@ -43,7 +46,8 @@
 
 #product .information header h2 {
 	font-size: 24px;
-	float: left;
+	line-height: 1.2;
+	text-shadow: rgba(255, 255, 255, 1) 0 1px;
 }
 
 #product .information header .brand {
@@ -52,6 +56,7 @@
 
 #product .information header .status {
 	float: right;
+	color: #B2B2B2;
 	margin-top: 6px;
 	font-size: 16px;
 }
@@ -62,27 +67,54 @@
 	color: #7F7F7F;
 	margin-bottom: 16px;
 	float: left;
+	text-shadow: rgba(255, 255, 255, 1) 0 1px;
 	line-height: 35px;
+}
+
+#product .information .old {
+	text-decoration: line-through;
+	color: #B2B2B2;
+	font-size: 20px;
 }
 
 #product .information .description {
 	margin-bottom: 16px;
-	font-size: 12px;
-	background: #FFFFFF;
 	color: #404040;
-	padding: 14px 18px 10px 18px;
+	padding: 20px 25px;
 	box-shadow: rgba(0, 0, 0, .1) 0 1px 2px;
+	background: #FFF;
 }
 
 #product .information .description p {
-	line-height: 1.2;
-	padding-bottom: 4px;
+	margin-bottom: 14px;
+	line-height: 1.5;
 }
 
-#product .information ul {
+#product .information .description ul {
+	margin-bottom: 14px;
 }
 
-#product .information ul li {
+#product .information .description li + li {
+	margin-top: 4px;
+}
+
+#product .information .description ol {
+	padding-left: 30px;
+	margin-bottom: 14px;
+}
+
+#product .information .description ul {
+	padding-left: 30px;
+}
+
+#product .information .description ul li {
+	list-style-type: square;
+}
+
+#product .information .specs {}
+
+#product .information .specs li + li {
+	margin-top: 4px;
 }
 
 #product .information ul li strong {

@@ -11,7 +11,7 @@
     <div class="product clearfix">
       <div class="images">
         <a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class="primary">
-          <img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" class="primary">
+          <img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>">
         </a>
         <ul>
           <?php foreach ($images as $image) { ?>
@@ -38,7 +38,8 @@
             <?php if (!$special) { ?>
               <?php echo $price; ?>
             <?php } else { ?>
-              <span class="price-old"><?php echo $price; ?></span> <span class="price-new"><?php echo $special; ?></span>
+              <span class="old"><?php echo $price; ?></span>
+              <?php echo $special; ?>
             <?php } ?>
           </div>
           <input type="text" id="quantity" name="quantity" size="2" value="1">
@@ -48,7 +49,7 @@
         <div class="description">
           <?php echo $description; ?>
         </div>
-        <ul>
+        <ul class="specs">
           <li>
             <?php echo $text_model; ?> <strong><?php echo $model; ?></strong>
           </li>
@@ -66,27 +67,11 @@
         </ul>
       </div>
     </div>
-    <div class="review">
-      <h2>Reviews</h2>
-      <ul id="reviews">
-
-      </ul>
-    </div>
   </div>
 </div>
     <div class="right">
       <div class="description">
       <?php if ($price) { ?>
-      <div class="price"><?php echo $text_price; ?>
-        <?php if (!$special) { ?>
-          <?php echo $price; ?>
-        <?php } else { ?>
-          <span class="price-old"><?php echo $price; ?></span> <span class="price-new"><?php echo $special; ?></span>
-        <?php } ?>
-        <br />
-        <?php if ($tax) { ?>
-          <span class="price-tax"><?php echo $text_tax; ?> <?php echo $tax; ?></span><br />
-        <?php } ?>
         <?php if ($discounts) { ?>
         <br />
         <div class="discount">
@@ -243,32 +228,6 @@
         <?php } ?>
       </div>
       <?php } ?>
-      <div class="cart">
-        <div><?php echo $text_qty; ?>
-          <input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" />
-          <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
-          &nbsp;
-          <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
-        </div>
-        <div><span>&nbsp;&nbsp;&nbsp;<?php echo $text_or; ?>&nbsp;&nbsp;&nbsp;</span></div>
-        <div><a onclick="addToWishList('<?php echo $product_id; ?>');"><?php echo $button_wishlist; ?></a><br />
-          <a onclick="addToCompare('<?php echo $product_id; ?>');"><?php echo $button_compare; ?></a></div>
-        <?php if ($minimum > 1) { ?>
-        <div class="minimum"><?php echo $text_minimum; ?></div>
-        <?php } ?>
-      </div>
-      <?php if ($review_status) { ?>
-      <div class="review">
-        <div>
-          <img src="catalog/view/theme/default/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />
-          <a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $reviews; ?></a>|<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $text_write; ?></a></div>
-        <div class="share"><!-- AddThis Button BEGIN -->
-          <div class="addthis_default_style"><a class="addthis_button_compact"><?php echo $text_share; ?></a> <a class="addthis_button_email"></a><a class="addthis_button_print"></a> <a class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a></div>
-          <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script> 
-          <!-- AddThis Button END --> 
-        </div>
-      </div>
-      <?php } ?>
     </div>
   </div>
   <?php if ($attribute_groups) { ?>
@@ -292,65 +251,6 @@
     </table>
   </div>
   <?php } ?>
-  <?php if ($review_status) { ?>
-  <div id="tab-review" class="tab-content">
-    <h2 id="review-title"><?php echo $text_write; ?></h2>
-    <b><?php echo $entry_name; ?></b><br />
-    <input type="text" name="name" value="" />
-    <br />
-    <br />
-    <b><?php echo $entry_review; ?></b>
-    <textarea name="text" cols="40" rows="8" style="width: 98%;"></textarea>
-    <span style="font-size: 11px;"><?php echo $text_note; ?></span><br />
-    <br />
-    <b><?php echo $entry_rating; ?></b> <span><?php echo $entry_bad; ?></span>&nbsp;
-    <input type="radio" name="rating" value="1" />
-    &nbsp;
-    <input type="radio" name="rating" value="2" />
-    &nbsp;
-    <input type="radio" name="rating" value="3" />
-    &nbsp;
-    <input type="radio" name="rating" value="4" />
-    &nbsp;
-    <input type="radio" name="rating" value="5" />
-    &nbsp;<span><?php echo $entry_good; ?></span><br />
-    <br />
-    <b><?php echo $entry_captcha; ?></b><br />
-    <input type="text" name="captcha" value="" />
-    <br />
-    <img src="index.php?route=product/product/captcha" alt="" id="captcha" /><br />
-    <br />
-    <div class="buttons">
-      <div class="right"><a id="button-review" class="button"><?php echo $button_continue; ?></a></div>
-    </div>
-  </div>
-  <?php } ?>
-  <?php if ($products) { ?>
-  <div id="tab-related" class="tab-content">
-    <div class="box-product">
-      <?php foreach ($products as $product) { ?>
-      <div>
-        <?php if ($product['thumb']) { ?>
-        <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
-        <?php } ?>
-        <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
-        <?php if ($product['price']) { ?>
-        <div class="price">
-          <?php if (!$product['special']) { ?>
-          <?php echo $product['price']; ?>
-          <?php } else { ?>
-          <span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new"><?php echo $product['special']; ?></span>
-          <?php } ?>
-        </div>
-        <?php } ?>
-        <?php if ($product['rating']) { ?>
-        <div class="rating"><img src="catalog/view/theme/default/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
-        <?php } ?>
-        <a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><?php echo $button_cart; ?></a></div>
-      <?php } ?>
-    </div>
-  </div>
-  <?php } ?>
   <?php if ($tags) { ?>
   <div class="tags"><b><?php echo $text_tags; ?></b>
     <?php for ($i = 0; $i < count($tags); $i++) { ?>
@@ -365,7 +265,6 @@
     </div>
   </div>
 </div>
-  <?php echo $content_bottom; ?></div>
 <script type="text/javascript"><!--
 $('#add-to-cart').bind('click', function() {
 	$.ajax({
