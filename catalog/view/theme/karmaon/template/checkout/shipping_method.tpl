@@ -25,4 +25,6 @@
     <textarea id="comment" name="comment" value="<?php echo $comment; ?>"></textarea>
   </div>
 </div>
-<input type="button" value="<?php echo $button_continue; ?>" id="button-shipping-method" class="button green">
+<div class="form-actions">
+  <input type="button" value="<?php echo $button_continue; ?>" id="button-shipping-method" class="button green">
+</div>

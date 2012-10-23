@@ -16,6 +16,7 @@
   <?php foreach ($links as $link) { ?>
     <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
   <?php } ?>
+  <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/bootstrap.css" />
   <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/site.css" />
   <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/product.css" />
   <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/home.css" />

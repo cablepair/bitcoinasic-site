@@ -23,14 +23,18 @@
 <br />
 <br />
 <?php if ($text_agree) { ?>
-<div class="buttons">
-  <div class="right"><?php echo $text_agree; ?>
-    <?php if ($agree) { ?>
-    <input type="checkbox" name="agree" value="1" checked="checked" />
-    <?php } else { ?>
-    <input type="checkbox" name="agree" value="1" />
-    <?php } ?>
-    <input type="button" value="<?php echo $button_continue; ?>" id="button-payment-method" class="button" />
+<div class="form-actions">
+    <div class="final">
+      <label for="agree">
+        <?php if ($agree) { ?>
+          <input type="checkbox" name="agree" id="agree" value="1" checked="checked" />
+        <?php } else { ?>
+          <input type="checkbox" name="agree" id="agree" value="1" />
+        <?php } ?>
+        <?php echo $text_agree; ?>
+      </label>
+    </div>
+    <input type="button" value="<?php echo $button_continue; ?>" id="button-payment-method" class="button green" />
   </div>
 </div>
 <?php } else { ?>
@@ -40,9 +44,3 @@
   </div>
 </div>
 <?php } ?>
-<script type="text/javascript"><!--
-$('.colorbox').colorbox({
-	width: 640,
-	height: 480
-});
-//--></script> 

@@ -477,7 +477,14 @@ a.button {
 	padding: 4px 8px;
 	font-size: 13px;
 	margin-top: 0;
+}
 
+#content2 .form-actions {
+	margin: -25px -30px -25px -30px;
+}
+
+#content2 fieldset {
+	border-top: 1px solid #EEE;
 }
 
 .form-row {
@@ -492,7 +499,6 @@ legend {
 }
 
 fieldset {
-	border-top: 1px solid #EEE;
 	margin-bottom: 50px;
 }
 
@@ -519,7 +525,6 @@ fieldset p {
 }
 
 .form-actions {
-	margin: -25px -30px -25px -30px;
 	background: #FAFAFA;
 	border-top: 1px solid #F5F5F5;
 	padding: 20px 30px;
@@ -588,18 +593,22 @@ fieldset p {
 	float: left;
 }
 
-#contact .contact {}
+#contact .contact aside {
+	background: #F2F2F2;
+	padding: 20px;
+	border-radius: 5px;
+}
 
 /* Notifications */
 
-.notification {
+.notification, .warning {
 	padding: 15px 20px;
 	margin: -25px -30px 25px -30px;
 	border-bottom: 1px solid transparent;
 	margin-bottom: 1px solid #000;
 }
 
-.notification.error {
+.notification.error, .warning {
 	color: #B94A48;
 	background-color: #F2DEDE;
 	border-color: #EED3D7;

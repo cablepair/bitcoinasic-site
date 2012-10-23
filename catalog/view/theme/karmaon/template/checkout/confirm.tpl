@@ -1,13 +1,13 @@
 <?php if (!isset($redirect)) { ?>
 <div class="checkout-product">
-  <table>
+  <table class="table">
     <thead>
       <tr>
-        <td class="name"><?php echo $column_name; ?></td>
-        <td class="model"><?php echo $column_model; ?></td>
-        <td class="quantity"><?php echo $column_quantity; ?></td>
-        <td class="price"><?php echo $column_price; ?></td>
-        <td class="total"><?php echo $column_total; ?></td>
+        <th class="name"><?php echo $column_name; ?></th>
+        <th class="model"><?php echo $column_model; ?></th>
+        <th class="quantity"><?php echo $column_quantity; ?></th>
+        <th class="price"><?php echo $column_price; ?></th>
+        <th class="total"><?php echo $column_total; ?></th>
       </tr>
     </thead>
     <tbody>

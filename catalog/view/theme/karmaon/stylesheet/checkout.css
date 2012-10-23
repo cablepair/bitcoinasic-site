@@ -65,7 +65,7 @@
 	margin-top: 3px;
 }
 
-#checkout .total {
+#checkout .cart .total {
 	float: right;
 	font-weight: bold;
 	font-size: 20px;
@@ -148,10 +148,6 @@
 	background: #FFF;
 }
 
-#checkout .checkout ul li .checkout-content {
-	padding: 12px 20px;
-}
-
 #checkout .checkout ul li .checkout-heading {
 	font-weight: bold;
 	font-size: 14px;
@@ -164,19 +160,70 @@
 	box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0 0 inset;
 	text-shadow: rgba(255, 255, 255, .5) 0 1px;
 	position: relative;
-	margin-bottom: 8px;
+	margin-bottom: 12px;
+}
+
+#checkout .checkout ul li .checkout-heading .edit {
+	float: right;
+	cursor: pointer;
+}
+
+#checkout .checkout .checkout-content p {
+	margin-bottom: 14px;
+}
+
+#checkout .checkout .checkout-content .submit-section {
+	margin-left: 150px;
+	margin-top: 50px;
+	margin: -50px 0 0 150px;
+}
+
+#checkout .checkout .checkout-content .submit-section .button {
+	padding: 4px 8px;
 }
 
 /* Checkout Option */
 
 #checkout .checkout .login {
 	float: right;
-	width: 319px;
+	width: 259px;
+}
+
+#checkout .checkout fieldset {
+	margin: 40px 0 0 40px;
+}
+
+#checkout .checkout .register label {
+	display: block;
+}
+
+#checkout .checkout .register label + label {
+	margin-top: 14px;
 }
 
 #checkout .checkout .register {
 	float: left;
-	width: 319px;
+	padding-right: 40px;
+	width: 249px;
+	border-right: 1px solid #EEE;;
+}
+
+#checkout .checkout .login .form-input {
+	margin-left: 0;
+}
+
+#checkout .checkout .login .form-input input {
+
+}
+
+#checkout .checkout .checkout-content .form-actions {
+	margin: 40px 0 20px 0;
+}
+
+#checkout .checkout .checkout-content .warning  {
+	margin: 0;
+	border-style: solid;
+	margin-bottom: 14px;
 }
 
 /* Success */
