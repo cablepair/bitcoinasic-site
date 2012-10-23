@@ -43,7 +43,7 @@
             <?php } ?>
           </div>
           <input type="text" id="quantity" name="quantity" size="2" value="1">
-          <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
+          <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>">
           <button id="add-to-cart" class="button green">Add To Cart</button>
         </div>
         <div class="description">
@@ -270,10 +270,10 @@ $('#add-to-cart').bind('click', function() {
 	$.ajax({
 		url: 'index.php?route=checkout/cart/add',
 		type: 'post',
-		data: $('.product-info input[type=\'text\'], .product-info input[type=\'hidden\'], .product-info input[type=\'radio\']:checked, .product-info input[type=\'checkbox\']:checked, .product-info select, .product-info textarea'),
+		data: $('.information input[type=\'text\'], .information input[type=\'hidden\'], .information input[type=\'radio\']:checked, information  input[type=\'checkbox\']:checked, information  select, information  textarea'),
 		dataType: 'json',
 		success: function(json) {
-			$('.success, .warning, .attention, information, .error').remove();
+			$('.success, .notification .error, .attention, information, .error').remove();
 			
 			if (json['error']) {
 				if (json['error']['option']) {
@@ -332,49 +332,3 @@ new AjaxUpload('#button-option-<?php echo $option['product_option_id']; ?>', {
 <?php } ?>
 <?php } ?>
 <?php } ?>
-<script type="text/javascript"><!--
-$('#review .pagination a').live('click', function() {
-	$('#review').fadeOut('slow');
-		
-	$('#review').load(this.href);
-	
-	$('#review').fadeIn('slow');
-	
-	return false;
-});			
-
-$('#reviews').load('index.php?route=product/product/review&product_id=<?php echo $product_id; ?>');
-
-$('#button-review').bind('click', function() {
-	$.ajax({
-		url: 'index.php?route=product/product/write&product_id=<?php echo $product_id; ?>',
-		type: 'post',
-		dataType: 'json',
-		data: 'name=' + encodeURIComponent($('input[name=\'name\']').val()) + '&text=' + encodeURIComponent($('textarea[name=\'text\']').val()) + '&rating=' + encodeURIComponent($('input[name=\'rating\']:checked').val() ? $('input[name=\'rating\']:checked').val() : '') + '&captcha=' + encodeURIComponent($('input[name=\'captcha\']').val()),
-		beforeSend: function() {
-			$('.success, .warning').remove();
-			$('#button-review').attr('disabled', true);
-			$('#review-title').after('<div class="attention"><img src="catalog/view/theme/default/image/loading.gif" alt="" /> <?php echo $text_wait; ?></div>');
-		},
-		complete: function() {
-			$('#button-review').attr('disabled', false);
-			$('.attention').remove();
-		},
-		success: function(data) {
-			if (data['error']) {
-				$('#review-title').after('<div class="warning">' + data['error'] + '</div>');
-			}
-			
-			if (data['success']) {
-				$('#review-title').after('<div class="success">' + data['success'] + '</div>');
-								
-				$('input[name=\'name\']').val('');
-				$('textarea[name=\'text\']').val('');
-				$('input[name=\'rating\']:checked').attr('checked', '');
-				$('input[name=\'captcha\']').val('');
-			}
-		}
-	});
-});
-//--></script> 
-<?php echo $footer; ?>
