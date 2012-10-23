@@ -1,0 +1,51 @@
+#about .intro {
+	padding: 40px 0;
+	text-align: center;
+}
+
+#about .intro h1 {
+	color: #353637;
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+
+#about .intro h2 {
+	color: #717476;
+	font-size: 18px;
+}
+
+#about .team {
+	background: #FFF;
+	padding: 0 40px;
+	margin: 0 -40px 20px -40px;
+}
+
+#about .team h2 {
+	font-size: 20px;
+	padding: 40px 0 30px 0;
+	text-align: center;
+}
+
+#about .team ul {
+	margin: 0 -30px;
+}
+
+#about .team ul li {
+	width: 270px;
+	margin: 0 30px 30px 30px;
+	float: left;
+}
+
+#about .team img {
+}
+
+#about .team ul h3 {
+	font-size: 16px;
+	margin: 15px 0;
+	color: #333334;
+}
+
+#about .team ul p {
+	line-height: 1.4;
+	color: #727273;
+}

@@ -1,0 +1,97 @@
+#account .links {
+	margin: 0 -10px;
+}
+
+#account .links dl {
+	float: left;
+	width: 210px;
+	margin: 0 10px;
+}
+
+#account .links dt {
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom: 4px;
+}
+
+#account .links dd ul li {
+	margin-bottom: 2px;
+}
+
+#account .links dd a {
+	text-decoration: none;
+}
+
+#account .addresses li {
+	background: #E5E5E5;
+	padding: 8px 12px;
+	border: 1px solid #CBCBCB;
+	border-radius: 5px;
+	-webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0 0 inset;
+	-moz-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 4px;
+	box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0 0 inset;
+	text-shadow: rgba(255, 255, 255, .5) 0 1px;
+	position: relative;
+	margin-bottom: 6px;
+}
+
+#account .addresses .address {
+	float: left;
+}
+
+#account .addresses .actions {
+	float: right;
+}
+
+#account .addresses a {
+	text-decoration: none;
+	margin-left: 8px;
+}
+
+#account .orders li {
+	background: #E5E5E5;
+	padding: 8px 12px;
+	border: 1px solid #CBCBCB;
+	border-radius: 5px;
+	-webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0 0 inset;
+	-moz-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 4px;
+	box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0 0 inset;
+	text-shadow: rgba(255, 255, 255, .5) 0 1px;
+	position: relative;
+	margin-bottom: 8px;
+}
+
+#account .orders li .id {
+	float: left;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#account .orders li .status {
+	position: absolute;
+	top : 12px;
+	left: 50px;
+}
+
+#account .orders li .date_added {
+	position: absolute;
+	top : 12px;
+	left: 170px;
+}
+
+#account .orders li .total {
+	position: absolute;
+	top : 12px;
+	right: 220px;
+	font-weight: bold;
+}
+
+#account .orders li .actions {
+	float: right;
+	margin-top: 4px;
+}
+
+#account .orders li .actions a {
+	text-decoration: none;
+	margin-left: 5px;
+}

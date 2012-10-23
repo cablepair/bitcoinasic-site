@@ -1,0 +1,16 @@
+#affiliate {
+
+}
+
+#affiliate .about {
+	float: left;
+	width: 400px;
+}
+
+#affiliate .login {
+}
+
+#affiliate .login .form {
+	float: right;
+	background: #FFF;
+}
