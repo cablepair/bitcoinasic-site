@@ -51,9 +51,8 @@
 }
 
 #product .information header .status {
-	position: absolute;
-	top: 6px;
-	right: 0;
+	float: right;
+	margin-top: 6px;
 	font-size: 16px;
 }
 

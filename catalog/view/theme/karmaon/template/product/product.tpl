@@ -26,12 +26,12 @@
       <div class="information">
         <header class="clearfix">
           <h2>
+            <div class="status"><?php echo $stock; ?></div>
             <?php if ($manufacturer) { ?>
               <span class="brand"><?php echo $manufacturer; ?></span> 
             <?php } ?>
             <?php echo $heading_title; ?>
           </h2>
-          <div class="status"><?php echo $stock; ?></div>
         </header>
         <div class="add">
           <div class="price">
