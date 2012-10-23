@@ -5,6 +5,8 @@ class ControllerProductProduct extends Controller {
 	public function index() { 
 		$this->language->load('product/product');
 		$this->document->setBodyId('product');
+
+		$this->data['shopping_cart'] = $this->url->link('checkout/cart', '', 'SSL');
 	
 		$this->data['breadcrumbs'] = array();
 

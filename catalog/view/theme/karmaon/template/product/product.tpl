@@ -284,13 +284,7 @@ $('#add-to-cart').bind('click', function() {
 			} 
 			
 			if (json['success']) {
-				$('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
-					
-				$('.success').fadeIn('slow');
-					
-				$('#cart-total').html(json['total']);
-				
-				$('html, body').animate({ scrollTop: 0 }, 'slow'); 
+        window.location = "<?php echo $shopping_cart ?>";
 			}	
 		}
 	});
@@ -332,3 +326,4 @@ new AjaxUpload('#button-option-<?php echo $option['product_option_id']; ?>', {
 <?php } ?>
 <?php } ?>
 <?php } ?>
+<?php echo $footer; ?>
