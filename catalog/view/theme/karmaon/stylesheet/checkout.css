@@ -35,12 +35,14 @@
 	width: 200px;
 }
 
-#checkout .cart li .details h3 {
+#checkout .cart li .details .name {
 	font-weight: bold;
 	color: #656565;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	text-decoration: none;
+	display: block;
 }
 
 #checkout .cart li .details h4 {

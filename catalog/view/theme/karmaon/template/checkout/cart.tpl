@@ -43,7 +43,7 @@
                   <img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" />
                 </a>
                 <div class="details">
-                  <h3><?php echo $product['name']; ?></h3>
+                  <a href="<?php echo $product['href']; ?>" class="name"><?php echo $product['name']; ?></a>
                   <h4><?php echo $product['model']; ?></h4>
                 </div>
                 <div class="controls">
