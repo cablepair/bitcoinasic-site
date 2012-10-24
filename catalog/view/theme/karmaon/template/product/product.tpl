@@ -13,7 +13,7 @@
         <a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class="primary">
           <img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>">
         </a>
-        <ul>
+        <ul class="clearfix">
           <?php foreach ($images as $image) { ?>
             <li>
               <a href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>" class="colorbox" rel="colorbox">
@@ -38,7 +38,6 @@
             <?php if (!$special) { ?>
               <?php echo $price; ?>
             <?php } else { ?>
-              <span class="old"><?php echo $price; ?></span>
               <?php echo $special; ?>
             <?php } ?>
           </div>
