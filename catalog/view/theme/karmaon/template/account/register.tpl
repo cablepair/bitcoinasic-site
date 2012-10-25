@@ -17,7 +17,7 @@
         <div class="notification error"><?php echo $error_warning; ?></div>
       <?php } ?>
       <!-- Opencart has one of the worst templating systems EVER -->
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="horizontal">
         <fieldset>
           <legend>Your Personal Details</legend>
           <p class="description">If we have any problems, we can contact you through here.</p>
@@ -176,10 +176,8 @@
           </div>
         </fieldset>
         <div class="form-actions clearfix">
-          <div class="final">
-          <label for="agree"><input type="checkbox" name="agree" id="agree"><?php echo $text_agree; ?></label>
-          </div>
-          <input type="submit" value="<?php echo $button_continue; ?>" class="button green" />
+          <label for="agree" class="secondary"><input type="checkbox" name="agree" id="agree"><?php echo $text_agree; ?></label>
+          <input type="submit" value="<?php echo $button_continue; ?>" class="button green primary" />
         </div>
       </form>
     </div>

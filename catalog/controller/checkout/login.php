@@ -6,10 +6,8 @@ class ControllerCheckoutLogin extends Controller {
 		$this->data['text_new_customer'] = $this->language->get('text_new_customer');
 		$this->data['text_returning_customer'] = $this->language->get('text_returning_customer');
 		$this->data['text_checkout'] = $this->language->get('text_checkout');
-		$this->data['text_register'] = $this->language->get('text_register');
 		$this->data['text_guest'] = $this->language->get('text_guest');
 		$this->data['text_i_am_returning_customer'] = $this->language->get('text_i_am_returning_customer');
-		$this->data['text_register_account'] = $this->language->get('text_register_account');
 		$this->data['text_forgotten'] = $this->language->get('text_forgotten');
  
 		$this->data['entry_email'] = $this->language->get('entry_email');
@@ -17,6 +15,8 @@ class ControllerCheckoutLogin extends Controller {
 		
 		$this->data['button_continue'] = $this->language->get('button_continue');
 		$this->data['button_login'] = $this->language->get('button_login');
+
+		$this->data['register'] = $this->url->link('account/register', '', 'SSL');
 		
 		$this->data['guest_checkout'] = ($this->config->get('config_guest_checkout') && !$this->config->get('config_customer_price') && !$this->cart->hasDownload());
 		

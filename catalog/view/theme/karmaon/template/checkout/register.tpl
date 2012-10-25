@@ -131,7 +131,8 @@
   </div>
   <input type="button" value="<?php echo $button_continue; ?>" id="button-register" class="green button" />
 </div>
-<script type="text/javascript"><!--
+
+<script type="text/javascript">
 $('#payment-address input[name=\'customer_group_id\']:checked').live('change', function() {
 	var customer_group = [];
 	
@@ -216,10 +217,3 @@ $('#payment-address select[name=\'country_id\']').bind('change', function() {
 });
 
 $('#payment-address select[name=\'country_id\']').trigger('change');
-//--></script> 
-<script type="text/javascript"><!--
-$('.colorbox').colorbox({
-	width: 640,
-	height: 480
-});
-//--></script> 

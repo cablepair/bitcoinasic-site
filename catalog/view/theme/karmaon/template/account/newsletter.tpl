@@ -12,7 +12,7 @@
       <header class="clearfix">
         <h1><?php echo $heading_title; ?></h1>
       </header>
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="horizontal">
         <fieldset>
           <legend>Status</legend>
           <p>
@@ -27,7 +27,7 @@
         </fieldset>
         <div class="form-actions clearfix">
           <a href="<?php echo $back; ?>" class="secondary"><?php echo $button_back; ?></a>
-          <input type="submit" value="<?php echo $button_continue; ?>" class="button green primary" /></div>
+          <input type="submit" value="<?php echo $button_continue; ?>" class="button green primary">
         </div>
       </form>
     </div>

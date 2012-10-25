@@ -27,7 +27,7 @@
           </div>
         </div>
       <?php } ?>
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="horizontal">
         <fieldset>
           <legend>Login Credentials</legend>
           <div class="form-row">
@@ -47,7 +47,7 @@
           <?php } ?>
         </fieldset>
         <div class="form-actions clearfix">
-          <input type="submit" value="<?php echo $button_login; ?>" class="button green" />
+          <input type="submit" value="<?php echo $button_login; ?>" class="button green primary" />
         </div>
       </form>
     </div>

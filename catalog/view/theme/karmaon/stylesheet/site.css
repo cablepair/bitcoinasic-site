@@ -74,7 +74,6 @@ body {
 	font-size: 13px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background: #F2F2F2;
-	color: #404040;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -87,7 +86,6 @@ a {
 	width: 930px;
 	position: relative;
 }
-
 
 /* Header */
 
@@ -411,9 +409,9 @@ a.button {
 }
 
 #content2 {
-	width: 670px;
+	width: 652px;
 	min-height: 220px;
-	padding: 30px 30px 25px 30px;
+	padding: 30px 40px 30px 40px;
 	background: #FFF;
 	position: relative;
 	z-index: 1;
@@ -430,8 +428,10 @@ a.button {
 
 #content2 header, .box header {
 	border: 1px solid #000000;
-	margin: -30px -30px 25px -30px;
+	margin: -30px -40px 30px -40px;
 	padding: 18px 30px;
+	position: relative;
+	z-index: 2;
 	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #454545), color-stop(50%, #404040), color-stop(51%, #383838), color-stop(100%, #333333));
 	background-image: -webkit-linear-gradient(#454545, #404040 50%, #383838 51%, #333333);
 	background-image: -moz-linear-gradient(#454545, #404040 50%, #383838 51%, #333333);
@@ -464,7 +464,7 @@ a.button {
 
 #content2 header .extra {
 	float: right;
-	margin-top: 6px;
+	margin-top: 4px;
 	font-size: 16px;
 	text-shadow: rgba(0, 0, 0, .4) 0 1px;
 	color: #FFF;
@@ -480,116 +480,124 @@ a.button {
 	margin-top: 0;
 }
 
-#content2 .form-actions {
-	margin: -25px -30px -25px -30px;
-}
-
-#content2 fieldset {
-	border-top: 1px solid #EEE;
-}
-
-.form-row {
-	padding: 10px 0;
-}
-
-legend {
-	font-weight: bold;
-	font-size: 16px;
-	padding-right: 20px;
-	margin-bottom: 15px;
-}
-
-fieldset {
-	margin-bottom: 50px;
-}
-
-fieldset .description {
-	margin-bottom: 20px;
-	color: #666;
-}
-
-fieldset p {
-	margin: -10px 0 15px 0;
-}
-
-.form-row label {
-	float: left;
-	width: 130px;
-	text-align: right;
-	margin-top: 10px;
-	color: #666666;
-}
-
-.form-input {
-	margin-left: 150px;
-	line-height: 37px;
-}
-
-.form-actions {
-	background: #FAFAFA;
-	border-top: 1px solid #F5F5F5;
-	padding: 20px 30px;
-	text-align: right;
-}
-
-.form-actions .final {
-	float: left;
-	margin-top: 8px;
-}
-
-.form-actions .final input {
-	margin-right: 10px;
-}
-
-.form-actions .button {
-	padding: 8px 12px;
-}
-
-.form-actions .secondary {
-	float: left;
-}
-
-.form-actions .primary {
-	float: right;
-}
-
-.form-actions a.secondary {
-	font-weight: bold;
-	text-decoration: none;
-	margin-top: 9px;
+#content2 .notification, #content2 .warning {
+	margin: -30px -40px 25px -40px;
 }
 
 .form-row .required {
 	font-weight: bold;
 }
 
-.form-input	input, .form-input textarea {
-	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px 0 inset, white 0 1px 0;
-	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px 0 inset, white 0 1px 0;
-	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px inset;
+/* Global input */
+
+textarea, input[type="text"], input[type="password"] {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 1px 2px 0 inset;
+	-moz-box-shadow: rgba(0, 0, 0, 0.15) 0 1px 2px 0 inset;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 1px 2px inset;
 	border: 1px solid #B2B2B2;
-	padding: 11px;
 	border-radius: 4px;
-	width: 80%;
 }
 
-.form-row .error {
-	margin-left: 150px;
+/* Horizontal forms */
+
+form.horizontal fieldset {
+	border-top: 1px solid #EEE;
+	margin-bottom: 30px;
+}
+
+form.horizontal p {
+	margin: -15px 0 30px 0;
+}
+
+form.horizontal .form-row {
+	padding: 10px 0;
+}
+
+form.horizontal hr {
+	background: #EEE;
+	height: 1px;
+	margin: 30px 0;
+	border: 0;
+}
+
+form.horizontal legend {
+	padding-right: 20px;
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom: 25px;
+}
+
+form.horizontal .form-row label {
+	float: left;
+	width: 140px;
+	text-align: right;
+	line-height: 34px;
+	color: #666666;
+}
+
+form.horizontal .form-input {
+	margin-left: 160px;
+	line-height: 32px;
+}
+
+form.horizontal textarea, form.horizontal input[type="text"], form.horizontal input[type="password"] {
+	line-height: 34px;
+	width: 65%;
+	padding: 0 10px;
+}
+
+form.horizontal .form-row .error {
+	margin-left: 160px;
 	color: #BF0000;
 	padding-top: 4px;
 }
 
-.form-row.error .form-input {
+form.horizontal .form-row.error .form-input {
 	margin-bottom: 4px;
 }
 
-.form-row.error input, .form-row.error textarea {
+form.horizontal .form-row.error input, .form-row.error textarea {
 	border-color: #BF0000;
 }
 
-/* Contact Us */
+.form-actions {
+	padding: 20px 25px;
+	border-top: 1px solid #E0E0E0;
+	background: #FAFAFA;
+	margin: 30px -40px -30px -40px;
+}
 
-#contact {}
+.form-actions .button {
+	padding: 8px 12px;
+}
+
+.form-actions .primary {
+	float: right;
+}
+
+.form-actions .secondary {
+	float: left;
+}
+
+fform-actions a.secondary {
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.form-actions label.secondary {
+	margin-top: 10px;
+}
+
+.form-actions label.secondary input[type="checkbox"] {
+	margin-right: 10px;
+}
+
+.select2-container {
+	width: 80%;
+}
+
+/* Contact Us */
 
 #contact .contact form {
 	float: left;
@@ -605,7 +613,6 @@ fieldset p {
 
 .notification, .warning {
 	padding: 15px 20px;
-	margin: -25px -30px 25px -30px;
 	border-bottom: 1px solid transparent;
 	margin-bottom: 1px solid #000;
 }

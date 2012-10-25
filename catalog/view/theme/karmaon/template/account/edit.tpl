@@ -15,7 +15,7 @@
       <?php if ($error_warning) { ?>
         <div class="notification error"><?php echo $error_warning; ?></div>
       <?php } ?>
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="horizontal">
         <fieldset>
           <legend><?php echo $text_your_details; ?></legend>
           <p>

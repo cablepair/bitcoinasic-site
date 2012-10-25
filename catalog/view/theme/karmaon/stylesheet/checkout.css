@@ -3,7 +3,7 @@
 	border-radius: 5px;
 	overflow: hidden;
 	position: relative;
-	min-height: 300px;
+	min-height: 250px;
 }
 
 #checkout .cart {
@@ -144,10 +144,20 @@
 
 /* Actual checkout */
 
-#checkout .checkout {
-	padding: 16px 16px 10px 16px;
-	width: 638px;
+#checkout-main {
+	width: 670px;
 	background: #FFF;
+}
+
+#checkout-main .form-actions {
+	margin: 0 -40px -30px -40px;
+}
+
+#checkout hr {
+	background: #EEE;
+	height: 1px;
+	padding: 20px 0;
+	border: 0;
 }
 
 #checkout .checkout ul li .checkout-heading {
@@ -170,26 +180,11 @@
 	cursor: pointer;
 }
 
-#checkout .checkout .checkout-content p {
+#checkout-main p {
 	margin-bottom: 14px;
 }
 
-#checkout .checkout .checkout-content .submit-section {
-	margin-left: 150px;
-	margin-top: 50px;
-	margin: -50px 0 0 150px;
-}
-
-#checkout .checkout .checkout-content .submit-section .button {
-	padding: 4px 8px;
-}
-
 /* Checkout Option */
-
-#checkout .checkout .login {
-	float: right;
-	width: 259px;
-}
 
 #checkout .checkout fieldset {
 	margin: 40px 0 0 40px;
@@ -208,14 +203,6 @@
 	padding-right: 40px;
 	width: 249px;
 	border-right: 1px solid #EEE;;
-}
-
-#checkout .checkout .login .form-input {
-	margin-left: 0;
-}
-
-#checkout .checkout .login .form-input input {
-
 }
 
 #checkout .checkout .checkout-content .form-actions {
@@ -270,4 +257,117 @@
 	line-height: 1.4;
 	font-size: 14px;
 	margin-bottom: 18px;
+}
+
+/* Checkout progress bar */
+
+#progress {
+	margin-bottom: 40px;
+}
+
+#progress .bar {
+	background: #404040;
+	border-radius: 5px;
+	height: 10px;
+}
+
+#progress ul {
+	border-radius: 10px;
+}
+
+#progress li {
+	width: 155px;
+	float: left;
+}
+
+#progress li h3 {
+	text-align: center;
+}
+
+#progress li .arrow {
+	background: #404040;
+	position: relative;
+	margin: 0 auto;
+	top: -22px;
+	width: 32px;
+	height: 32px;
+	border-radius: 32px;
+}
+
+#progress li.active .arrow {
+	background: #725050;
+}
+
+#progress li.active h3 {
+	font-weight: bold;
+}
+
+#progress li.complete .arrow {
+	background: #6AF27A;
+	font-size: 14px;
+	line-height: 32px;
+	text-align: center;
+}
+
+#progress li.complete .arrow:after {
+	content: "✓";
+}
+
+/* Login Section */
+
+#login-section {}
+
+#login-section .register {
+	width: 279px;
+	padding: 100px 0;
+	margin: 40px 0;
+	float: left;
+	text-align: center;
+	border-right: 1px solid #EEE;
+}
+
+#login-section .register h2 {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#login-section .register .button {
+	padding: 10px 16px;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+#login-section .login {
+	width: 250px;
+	padding: 90px 70px;
+	float: right;
+}
+
+#login-section .login legend {
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+}
+
+#login-section .login .text {
+	margin-bottom: 12px;
+	padding: 10px 12px;
+	width: 224px;
+}
+
+#login-section .login .button {
+	padding: 10px 0;
+	width: 250px;
+}
+
+/* details-section */
+
+#details-section {
+	padding: 30px 40px;
+}
+
+#checkout .selection {
+	margin-bottom: 40px;
 }

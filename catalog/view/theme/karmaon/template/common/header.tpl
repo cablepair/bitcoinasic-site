@@ -16,6 +16,7 @@
   <?php foreach ($links as $link) { ?>
     <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
   <?php } ?>
+  <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/select2.css" />
   <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/bootstrap.css" />
   <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/site.css" />
   <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/product.css" />
@@ -25,6 +26,7 @@
   <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/account.css" />
   <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/affiliate.css" />
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="catalog/view/theme/karmaon/javascript/select2.min.js"></script>
   <?php foreach ($styles as $style) { ?>
     <link rel="<?php echo $style['rel']; ?>" type="text/css" href="<?php echo $style['href']; ?>" media="<?php echo $style['media']; ?>" />
   <?php } ?>
