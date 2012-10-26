@@ -15,7 +15,7 @@ $_['text_message']   = '<p>Your enquiry has been successfully sent to the store 
 $_['entry_name']     = 'First Name:';
 $_['entry_email']    = 'E-Mail Address:';
 $_['entry_enquiry']  = 'Enquiry:';
-$_['entry_captcha']  = 'Enter the code in the box below:';
+$_['entry_captcha']  = 'Robot check:';
 
 // Email
 $_['email_subject']  = 'Enquiry %s';

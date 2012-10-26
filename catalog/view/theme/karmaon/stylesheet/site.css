@@ -565,6 +565,7 @@ form.horizontal .form-row.error input, .form-row.error textarea {
 	border-top: 1px solid #E0E0E0;
 	background: #FAFAFA;
 	margin: 30px -40px -30px -40px;
+	box-shadow: rgba(0, 0, 0, .05) 0 -1px 2px
 }
 
 .form-actions .button {
@@ -579,7 +580,7 @@ form.horizontal .form-row.error input, .form-row.error textarea {
 	float: left;
 }
 
-fform-actions a.secondary {
+.form-actions a.secondary {
 	text-decoration: none;
 	font-weight: bold;
 	margin-top: 10px;
@@ -599,14 +600,34 @@ fform-actions a.secondary {
 
 /* Contact Us */
 
+#contact .contact {
+	border-radius: 10px;
+}
+
 #contact .contact form {
+	background: #FFF url(../image/mail.png) repeat-x -10% 0;
+	border-radius: 10px;
 	float: left;
+	width: 600px;
+	padding: 55px 40px 30px 40px;
+	overflow: hidden;
 }
 
 #contact .contact aside {
-	background: #F2F2F2;
-	padding: 20px;
-	border-radius: 5px;
+	padding-top: 20px;
+	float: right;
+	width: 210px;
+}
+
+#contact .contact aside address {
+	line-height: 20px;
+	font-size: 14px;
+}
+
+#contact .contact aside h3 {
+	font-weight: bold;
+	line-height: 18px;
+	margin-bottom: 8px;
 }
 
 /* Notifications */
