@@ -188,14 +188,15 @@ nav#main a {
 
 .empty span {
 	font-size: 120px;
-	color: #cccccc;
+	color: #E5E5E5;
 	text-shadow: rgba(0, 0, 0, .4) 0 -1px;
 	font-weight: bold;
 }
 
 .empty h2 {
 	font-size: 20px;
-	color: #666666;
+	color: #7F7F7F;
+	margin-top: 10px;
 }
 
 /* Content */
