@@ -13,15 +13,17 @@
         <a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class="primary">
           <img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>">
         </a>
-        <ul class="clearfix">
-          <?php foreach ($images as $image) { ?>
-            <li>
-              <a href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>" class="colorbox" rel="colorbox">
-                <img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" />
-              </a>
-            </li>
-          <?php } ?>
-        </ul>
+        <?php if ($images) { ?>
+          <ul class="clearfix">
+            <?php foreach ($images as $image) { ?>
+              <li>
+                <a href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>" class="colorbox" rel="colorbox">
+                  <img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" />
+                </a>
+              </li>
+            <?php } ?>
+          </ul>
+        <?php } ?>
       </div>
       <div class="information">
         <header class="clearfix">
