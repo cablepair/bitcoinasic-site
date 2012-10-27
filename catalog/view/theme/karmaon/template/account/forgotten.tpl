@@ -15,7 +15,7 @@
       <?php if ($error_warning) { ?>
         <div class="notification error"><?php echo $error_warning; ?></div>
       <?php } ?>
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="horizontal">
         <fieldset>
           <legend>Reset Password</legend>
           <div class="form-row">
@@ -26,7 +26,7 @@
           </div>
         </fieldset>
         <div class="form-actions clearfix">
-          <input type="submit" value="<?php echo $button_continue; ?>" class="button green">
+          <input type="submit" value="<?php echo $button_continue; ?>" class="button green primary">
         </div>
       </form>
     </div>
