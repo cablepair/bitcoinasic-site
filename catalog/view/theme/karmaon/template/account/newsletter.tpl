@@ -14,14 +14,15 @@
       </header>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="horizontal">
         <fieldset>
-          <legend>Status</legend>
-          <p>
-            Change your subscription status.
-          </p>
+          <legend>Subscription status</legend>
           <div class="form-row">
             <label for="newsletter"><?php echo $entry_newsletter; ?></label>
             <div class="form-input">
-              <input type="checkbox" name="newsletter" id="newsletter" />
+              <select name="newsletter" id="newsletter">
+                <option selected="selected"><?php echo ($newsletter) ? '--- CURRENTLY SUBSCRIBED ---' : '--- CURRENTLY NOT SUBSCRIBED ---'; ?></option>
+                <option value="1">I would like to suscribe to newsletters</option>
+                <option value="0">No thanks!</option>
+              </select>
             </div>
           </div>
         </fieldset>

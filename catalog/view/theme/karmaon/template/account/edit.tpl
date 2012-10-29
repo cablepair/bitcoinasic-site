@@ -18,9 +18,6 @@
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="horizontal">
         <fieldset>
           <legend><?php echo $text_your_details; ?></legend>
-          <p>
-            Edit your personal details here.
-          </p>
           <div class="form-row<?php if ($error_firstname) { echo " error"; } ?>">
             <label for="firstname" class="required"><?php echo $entry_firstname; ?></label>
             <div class="form-input">

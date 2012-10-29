@@ -16,9 +16,6 @@
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="horizontal">
         <fieldset>
           <legend><?php echo $text_password; ?></legend>
-          <p class="description">
-            Change your password.
-          </p>
           <div class="form-row<?php if ($error_password) { echo " error"; } ?>">
             <label for="last" class="required"><?php echo $entry_password; ?></label>
             <div class="form-input">

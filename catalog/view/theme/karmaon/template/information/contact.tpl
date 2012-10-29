@@ -46,7 +46,7 @@
           </div>
           <div class="form-row<?php if ($error_captcha) { echo " error"; } ?>">
             <label for="captcha" class="required"><?php echo $entry_captcha; ?></label>
-            <div class="form-input">
+            <div class="form-input captcha clearfix">
               <input type="text" id="captcha" name="captcha" value="<?php echo $captcha; ?>"></input>
               <img src="index.php?route=information/contact/captcha" alt="">
             </div>

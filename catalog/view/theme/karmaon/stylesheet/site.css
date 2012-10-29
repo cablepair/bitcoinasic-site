@@ -287,6 +287,7 @@ nav#main a {
 .page .header {
 	padding: 40px 0;
 	text-align: center;
+	text-shadow: rgba(255, 255, 255, 1) 0 1px;
 }
 
 .page .header h1 {
@@ -502,12 +503,14 @@ textarea, input[type="text"], input[type="password"] {
 /* Horizontal forms */
 
 form.horizontal fieldset {
-	border-top: 1px solid #EEE;
 	margin-bottom: 30px;
+	padding-top: 23px;
+	border-top: 1px solid #EEE;
 }
 
 form.horizontal p {
-	margin: -15px 0 30px 0;
+	margin: -13px 0 30px 0;
+	color: #7F7F7F;
 }
 
 form.horizontal .form-row {
@@ -525,7 +528,6 @@ form.horizontal legend {
 	padding-right: 20px;
 	font-weight: bold;
 	font-size: 15px;
-	margin-bottom: 25px;
 }
 
 form.horizontal .form-row label {
@@ -533,7 +535,7 @@ form.horizontal .form-row label {
 	width: 140px;
 	text-align: right;
 	line-height: 34px;
-	color: #666666;
+	color: #404040;
 }
 
 form.horizontal .form-input {
@@ -541,10 +543,19 @@ form.horizontal .form-input {
 	line-height: 32px;
 }
 
+form.horizontal .form-input.captcha input {
+	width: 214px;
+	margin-right: 10px;
+	float: left;
+}
+
+form.horizontal .form-input.captcha img {
+	float: left;
+}
+
 form.horizontal textarea, form.horizontal input[type="text"], form.horizontal input[type="password"] {
-	line-height: 34px;
-	width: 65%;
-	padding: 0 10px;
+	width: 85%;
+	padding: 10px 10px;
 }
 
 form.horizontal .form-row .error {
@@ -565,7 +576,7 @@ form.horizontal .form-row.error input, .form-row.error textarea {
 	padding: 20px 25px;
 	border-top: 1px solid #E0E0E0;
 	background: #FAFAFA;
-	margin: 30px -40px -30px -40px;
+	margin: 0 -40px -30px -40px;
 	box-shadow: rgba(0, 0, 0, .05) 0 -1px 2px
 }
 
@@ -602,22 +613,23 @@ form.horizontal .form-row.error input, .form-row.error textarea {
 /* Contact Us */
 
 #contact .contact {
-	border-radius: 10px;
 }
 
 #contact .contact form {
-	background: #FFF url(../image/mail.png) repeat-x -10% 0;
-	border-radius: 10px;
 	float: left;
 	width: 600px;
-	padding: 55px 40px 30px 40px;
+	background: #FFF url(../image/mail.png) repeat-x -10% -15px;
+	padding: 40px 40px 30px 40px;
 	overflow: hidden;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 }
 
 #contact .contact aside {
-	padding-top: 20px;
 	float: right;
-	width: 210px;
+	width: 220px;
+	padding-top: 30px;
 }
 
 #contact .contact aside address {
