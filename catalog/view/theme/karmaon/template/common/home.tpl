@@ -125,7 +125,7 @@
         </dl>
       </section>
       <section class="order-now clearfix">
-        Ready to order?<a href="" class="button green">Pre-order today</a>800+ already have.
+        Ready to order?<a href="<?php echo $learn_more; ?>" class="button green">Pre-order today</a>800+ already have.
       </section>
       <section class="support">
         <ul class="clearfix">
