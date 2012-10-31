@@ -80,20 +80,6 @@ class ControllerCheckoutCart extends Controller {
 		}
 		
 		$this->document->setTitle($this->language->get('heading_title'));
-
-      	$this->data['breadcrumbs'] = array();
-
-      	$this->data['breadcrumbs'][] = array(
-        	'href'      => $this->url->link('common/home', '', 'SSL'),
-        	'text'      => $this->language->get('text_home'),
-        	'separator' => false
-      	); 
-
-      	$this->data['breadcrumbs'][] = array(
-        	'href'      => $this->url->link('checkout/cart', '', 'SSL'),
-        	'text'      => $this->language->get('heading_title'),
-        	'separator' => $this->language->get('text_separator')
-      	);
 			
     	if ($this->cart->hasProducts() || !empty($this->session->data['vouchers'])) {
 			$points = $this->customer->getRewardPoints();

@@ -91,8 +91,7 @@ a {
 
 #header {
 	height: 70px;
-	background: #333334;
-	box-shadow: rgba(0, 0, 0, .2) 0 1px 3px;
+	background: #333;
 	position: relative;
 	z-index: 1000;
 }
@@ -103,7 +102,7 @@ a {
 }
 
 #header h1 a {
-	color: #EEEEF3;
+	color: #FFF;
 	font-weight: 700;
 	font-size: 30px;
 	text-decoration: none;
@@ -277,9 +276,6 @@ nav#main a {
 /* Pages */
 
 .page {
-	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 -2px 4px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 -2px 4px;
-	box-shadow: rgba(0, 0, 0, 0.2) 0 -2px 4px;
 	position: relative;
 	z-index: 10;
 }
@@ -293,7 +289,7 @@ nav#main a {
 .page .header h1 {
 	color: #353637;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 28px;
 }
 
 .page .header h2 {
@@ -314,8 +310,7 @@ a.button {
 	border-radius: 4px;
 	cursor: pointer;
 	text-align: center;
-	font-weight: 700;
-	box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+	font-weight: bold;
 }
 
 .button.green {
@@ -555,7 +550,7 @@ form.horizontal .form-input.captcha img {
 
 form.horizontal textarea, form.horizontal input[type="text"], form.horizontal input[type="password"] {
 	width: 85%;
-	padding: 10px 10px;
+	padding: 10px;
 }
 
 form.horizontal .form-row .error {

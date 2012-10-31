@@ -10,7 +10,7 @@ class ControllerAccountReturn extends Controller {
     	}
  
     	$this->language->load('account/return');
-
+    	$this->document->setBodyId('account');
     	$this->document->setTitle($this->language->get('heading_title'));
 			
       	$this->data['breadcrumbs'] = array();
@@ -119,6 +119,8 @@ class ControllerAccountReturn extends Controller {
 			
 			$this->redirect($this->url->link('account/login', '', 'SSL'));
     	}
+
+    	$this->document->setBodyId('account');
 		
 		$this->load->model('account/return');
 						

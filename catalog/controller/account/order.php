@@ -161,6 +161,7 @@ class ControllerAccountOrder extends Controller {
     	}
 						
 		$this->load->model('account/order');
+		$this->document->setBodyId('account');
 			
 		$order_info = $this->model_account_order->getOrder($order_id);
 		

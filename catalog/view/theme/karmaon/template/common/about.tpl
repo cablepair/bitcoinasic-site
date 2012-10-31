@@ -1,12 +1,13 @@
 <?php echo $header; ?>
+<div class="about">
+    <div class="container">
+        <h1>We're innovators in Bitcoin mining</h1>
+        <h2>Since Janurary 1992, we've introduced numerous next-generation Bitcoin mining hardware to the market.</h2>
+    </div>
+</div>
 <div class="page">
     <div class="container">
-        <header class="intro">
-            <h1>Hi, we're BTCFPGA, innovators in Bitcoin mining.</h1>
-            <h2>We've been in the Bitcoin mining game since Janurary 2012</h2>
-        </header>
         <section class="team">
-            <h2>Meet the team</h2>
             <ul class="clearfix">
                 <li>
                     <img src="http://dummyimage.com/270x200/000/fff" alt="">

@@ -48,50 +48,180 @@
 	margin-left: 8px;
 }
 
-#account .orders li {
-	background: #E5E5E5;
-	padding: 8px 12px;
-	border: 1px solid #CBCBCB;
-	border-radius: 5px;
+#account .orders, #account .returns {
+	margin: -30px -40px 0 -40px;
+}
+
+#account .orders li, #account .returns li {
+	padding: 12px 16px;
+	border-bottom: 1px solid #E5E5E5;
 	-webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0 0 inset;
 	-moz-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 4px;
 	box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0 0 inset;
 	text-shadow: rgba(255, 255, 255, .5) 0 1px;
 	position: relative;
-	margin-bottom: 8px;
 }
 
-#account .orders li .id {
+#account .orders li .id, #account .returns li .id {
 	float: left;
 	font-weight: bold;
 	font-size: 20px;
 }
 
-#account .orders li .status {
+#account .orders li .status, #account .returns li .status {
 	position: absolute;
-	top : 12px;
-	left: 50px;
+	top : 16px;
+	left: 70px;
 }
 
 #account .orders li .date_added {
 	position: absolute;
-	top : 12px;
+	top : 16px;
 	left: 170px;
+}
+
+#account .returns li .date_added {
+	position: absolute;
+	top: 16px;
+	left: 220px;
 }
 
 #account .orders li .total {
 	position: absolute;
-	top : 12px;
+	top : 16px;
 	right: 220px;
 	font-weight: bold;
 }
 
-#account .orders li .actions {
+#account .orders li .actions, #account .returns li .actions {
 	float: right;
 	margin-top: 4px;
 }
 
-#account .orders li .actions a {
+#account .orders li .actions a, #account .returns li .actions a {
 	text-decoration: none;
 	margin-left: 5px;
+}
+
+#account .pagination {
+	margin-top: 30px;
+}
+
+#account .pagination .links {
+	float: left;
+	font-weight: bold;
+}
+
+#account .pagination .links a {
+	text-decoration: none;
+}
+
+#account .pagination .results {
+	float: right;
+}
+
+#account .order-info .dump, #account .return-info .dump {
+	padding: 20px 30px;
+	background: #FAFAFA;
+	border: 1px solid #BABABA;
+	border-radius: 4px;
+	-moz-box-shadow: rgba(0, 0, 0, .12) 0 1px 2px 0 inset;
+	box-shadow: rgba(0, 0, 0, .12) 0 1px 2px 0 inset;
+	text-shadow: rgba(0, 0, 0, .12) 0 1px 2px 0 inset;
+}
+
+#account .order-info .dump dt, #account .return-info .dump dt {
+	width: 120px;
+	float: left;
+	text-align: right;
+	line-height: 30px;
+	color: #7A7A7A;
+}
+
+#account .order-info .dump dd, #account .return-info .dump dd {
+	margin-left: 140px;
+	line-height: 30px;
+}
+
+#account .order-info .addresses {
+	margin-top: 24px;
+}
+
+#account .order-info .addresses .payment, #account .order-info .addresses .shipping {
+	width: 316px;
+}
+
+#account .order-info .addresses address {
+	-moz-box-shadow: rgba(0, 0, 0, .12) 0 1px 2px 0 inset;
+	box-shadow: rgba(0, 0, 0, .12) 0 1px 2px 0 inset;
+	text-shadow: rgba(0, 0, 0, .12) 0 1px 2px 0 inset;
+	padding: 12px 16px;
+	border: 1px solid #BABABA;
+	background: #FAFAFA;
+	line-height: 16px;
+	border-radius: 4px;
+}
+
+#account .order-info .addresses h3, #account .return-info .details h3, #account .history h3 {
+	font-weight: bold;
+	font-size: 12px;
+	margin-bottom: 8px;
+}
+
+#account .return-info .details {
+	margin-top: 24px;
+}
+
+#account .history {
+	margin-top: 24px;
+}
+
+#account .order-info .history {
+	margin-bottom: 24px;
+}
+
+#account .history ul {
+	-moz-box-shadow: rgba(0, 0, 0, .12) 0 1px 2px 0 inset;
+	box-shadow: rgba(0, 0, 0, .12) 0 1px 2px 0 inset;
+	text-shadow: rgba(0, 0, 0, .12) 0 1px 2px 0 inset;
+	border: 1px solid #BABABA;
+	border-radius: 4px;
+	background: #FAFAFA;
+}
+
+#account .history ul li {
+	padding: 8px 12px;
+	border-bottom: 1px solid #E5E5E5;
+	border-top: 1px solid #FFF;
+	line-height: 18px;
+}
+
+#account .history ul li:first-child {
+	border-top: none;
+}
+
+#account .history ul li:last-child {
+	border-bottom: none;
+}
+
+#account .history ul li .date {
+	margin-right: 8px;
+	font-weight: bold;
+}
+
+#account .history .status {
+	font-weight: bold;
+	margin-right: 18px;
+}
+
+#account .history .comment {
+}
+
+
+#account .order-info .addresses .payment {
+	float: left;
+}
+
+#account .order-info .addresses .shipping {
+	float: right;
 }

@@ -1,11 +1,4 @@
-<?php echo $header; ?>
-<div id="breadcrumbs">
-  <div class="container">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-      <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-    <?php } ?>
-  </div>
-</div>
+<?php echo $header; ?>	
 <div class="page">
 	<div class="container clearfix">
 		<header class="header">

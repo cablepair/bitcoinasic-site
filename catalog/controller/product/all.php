@@ -8,20 +8,7 @@ class ControllerProductAll extends Controller {
 		$this->document->setBodyId('product');
 
 		$this->data['heading_title'] = 'All Products';
-
-		$this->data['breadcrumbs'] = array();
-
-		$this->data['breadcrumbs'][] = array(
-			'text'      => $this->language->get('text_home'),
-			'href'      => $this->url->link('product/all', '', 'SSL'),
-			'separator' => false
-		);
-		$this->data['breadcrumbs'][] = array(
-			'text'      => 'All',
-			'href'      => $this->url->link('product/all', '', 'SSL'),
-			'separator' => $this->language->get('text_separator')
-		);
-
+		
 		$results = $this->model_catalog_product->getProducts(array());
 				
 		foreach ($results as $result) {

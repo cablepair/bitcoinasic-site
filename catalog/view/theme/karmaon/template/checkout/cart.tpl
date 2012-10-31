@@ -1,11 +1,4 @@
 <?php echo $header; ?>
-<div id="breadcrumbs">
-  <div class="container">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-      <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-    <?php } ?>
-  </div>
-</div>
 <div class="page">
   <div class="container clearfix">
     <header class="header">
@@ -39,7 +32,7 @@
           <?php foreach ($products as $product) { ?>
             <li class="clearfix">
               <?php if ($product['thumb']) { ?>
-                <a href="<?php echo $product['href']; ?>">
+                <a href="<?php echo $product['href']; ?>" class="thumb">
                   <img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" />
                 </a>
                 <div class="details">

@@ -5,13 +5,12 @@
     <title>404 Not Found</title>
   </head>
   <style type="text/css">
-    @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400ita#lic,600italic,700italic,800italic,400,800,700,600,300);
     * {
       margin: 0;
       padding: 0;
     }
     body {
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       background: #333333;
       text-align: center;
     }

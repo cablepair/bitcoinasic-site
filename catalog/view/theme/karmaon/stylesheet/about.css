@@ -1,3 +1,33 @@
+#about #header {
+	background: #333;
+}
+
+#about .about {
+	padding: 50px 0 100px 0;
+	background-color: #333;
+}
+
+#about .about h1 {
+	color: #FFF;
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+#about #header {
+	box-shadow: none;
+}
+
+#about #header h1, #about #header nav {
+	opacity: .2;
+}
+
+#about .about h2 {
+	font-size: 24px;
+	color: #BFBFBF;
+	line-height: 32px;
+}
+
 #about .intro {
 	padding: 40px 0;
 	text-align: center;
@@ -11,13 +41,12 @@
 
 #about .intro h2 {
 	color: #717476;
-	font-size: 18px;
+	font-size: 22px;
 }
 
 #about .team {
-	background: #FFF;
 	padding: 0 40px;
-	margin: 0 -40px 20px -40px;
+	margin: 40px -40px 0 -40px;
 }
 
 #about .team h2 {
@@ -37,6 +66,7 @@
 }
 
 #about .team img {
+	border-radius: 5px;
 }
 
 #about .team ul h3 {

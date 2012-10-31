@@ -1,37 +1,39 @@
 #checkout .window {
 	background: #FFF;
-	border-radius: 5px;
+	border-radius: 2px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
 	overflow: hidden;
 	position: relative;
 	min-height: 250px;
 }
 
 #checkout .cart {
-	width: 638px;
-	padding: 16px 16px 10px 16px;
+	width: 670px;
 }
 
 #checkout .cart li {
-	background: #E5E5E5;
-	padding: 6px;
-	border: 1px solid #CBCBCB;
-	border-radius: 5px;
-	-webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0 0 inset;
-	-moz-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 4px;
-	box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0 0 inset;
+	padding: 8px 12px;
 	text-shadow: rgba(255, 255, 255, .5) 0 1px;
 	position: relative;
+	border-bottom: 1px solid #E5E5E5;
 	margin-bottom: 6px;
 }
 
-#checkout .cart li img {
+#checkout .cart li .thumb img {
 	display: block;
 	float: left;
+	border: 1px solid #E5E5E5;
+	border-radius: 2px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.05) 0 1px 1px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.05) 0 1px 1px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0 1px 1px;
 }
 
 #checkout .cart li .details {
 	float: left;
-	margin: 9px 0 0 30px;
+	margin: 10px 0 0 30px;
 	width: 200px;
 }
 
@@ -52,7 +54,7 @@
 
 #checkout .cart .controls {
 	position: absolute;
-	top: 19px;
+	top: 23px;
 	left: 320px;
 	float: left;
 }
@@ -71,7 +73,7 @@
 	float: right;
 	font-weight: bold;
 	font-size: 20px;
-	margin-top: 13px;
+	margin-top: 14px;
 	margin-right: 10px;
 }
 
