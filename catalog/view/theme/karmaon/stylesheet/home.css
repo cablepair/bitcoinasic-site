@@ -1,5 +1,6 @@
 #home #header {
 	box-shadow: none;
+	border-bottom: none;
 	background: #333;
 }
 

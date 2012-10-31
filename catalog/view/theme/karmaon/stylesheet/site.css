@@ -90,22 +90,24 @@ a {
 /* Header */
 
 #header {
-	height: 70px;
-	background: #333;
+	height: 69px;
+	background: url(../image/header.png) #333;
+	border-bottom: 1px solid #000;
 	position: relative;
 	z-index: 1000;
 }
 
 #header h1 {
 	float: left;
-	margin-top: 18px;
+	margin-top: 22px;
 }
 
 #header h1 a {
 	color: #FFF;
-	font-weight: 700;
-	font-size: 30px;
+	font-weight: bold;
+	font-size: 26px;
 	text-decoration: none;
+	text-shadow: rgba(0, 0, 0, 1) 0 1px;
 }
 
 /* Main nav */
