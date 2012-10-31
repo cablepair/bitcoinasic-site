@@ -56,63 +56,6 @@
           <?php } ?>
         </ul>
       </form>
-    <!--
-    <div class="">
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-        <table class="items">
-          <thead>
-            <tr>
-              <td class="image"><?php echo $column_image; ?></td>
-              <td class="name"><?php echo $column_name; ?></td>
-              <td class="model"><?php echo $column_model; ?></td>
-              <td class="quantity"><?php echo $column_quantity; ?></td>
-              <td class="price"><?php echo $column_price; ?></td>
-              <td class="total"><?php echo $column_total; ?></td>
-            </tr>
-          </thead>
-          <tbody>
-            <?php foreach ($products as $product) { ?>
-            <tr>
-              <td class="image"><?php if ($product['thumb']) { ?>
-                <a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
-                <?php } ?></td>
-              <td class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
-                <?php if (!$product['stock']) { ?>
-                <span class="stock">***</span>
-                <?php } ?>
-                <div>
-                  <?php foreach ($product['option'] as $option) { ?>
-                  - <small><?php echo $option['name']; ?>: <?php echo $option['value']; ?></small><br />
-                  <?php } ?>
-                </div>
-                <?php if ($product['reward']) { ?>
-                <small><?php echo $product['reward']; ?></small>
-                <?php } ?></td>
-              <td class="model"><?php echo $product['model']; ?></td>
-              <td class="quantity">
-              <input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" />
-              <input type="image" src="catalog/view/theme/default/image/update.png" alt="<?php echo $button_update; ?>" title="<?php echo $button_update; ?>" />
-                &nbsp;<a href="<?php echo $product['remove']; ?>"><img src="catalog/view/theme/default/image/remove.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" /></a></td>
-              <td class="price"><?php echo $product['price']; ?></td>
-              <td class="total"><?php echo $product['total']; ?></td>
-            </tr>
-            <?php } ?>
-            <?php foreach ($vouchers as $vouchers) { ?>
-            <tr>
-              <td class="image"></td>
-              <td class="name"><?php echo $vouchers['description']; ?></td>
-              <td class="model"></td>
-              <td class="quantity"><input type="text" name="" value="1" size="1" disabled="disabled" />
-                &nbsp;<a href="<?php echo $vouchers['remove']; ?>"><img src="catalog/view/theme/default/image/remove.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" /></a></td>
-              <td class="price"><?php echo $vouchers['amount']; ?></td>
-              <td class="total"><?php echo $vouchers['amount']; ?></td>
-            </tr>
-            <?php } ?>
-          </tbody>
-        </table>
-      </form>
-    </div>
-  -->
       <div class="overview">
         <h2>Overview</h2>
         <ul>
@@ -131,7 +74,7 @@
         </ul>
         <div class="buttons clearfix">
           <a href="<?php echo $checkout; ?>" class="primary button green"><?php echo $button_checkout; ?></a>
-          <a href="<?php echo $continue; ?>" class="secondary"><?php echo $button_shopping; ?></a>
+          <a href="/" class="secondary">Continue</a>
         </div>
       </div>
     </div>

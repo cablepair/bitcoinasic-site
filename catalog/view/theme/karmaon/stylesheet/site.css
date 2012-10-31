@@ -638,6 +638,46 @@ form.horizontal .form-row.error input, .form-row.error textarea {
 	margin-bottom: 8px;
 }
 
+/* Success */
+
+.success .banner {
+	text-align: center;
+	width: 600px;
+	margin: 0 auto -25px auto;
+	position: relative;
+	z-index: 5;
+}
+
+.success .banner .check {
+	font-size: 50px;
+	text-align: center;
+	background: #FFF;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	margin: 0 auto;
+	border-radius: 50px;
+	box-shadow: rgba(0, 0, 0, .3) 0 1px 3px;
+}
+
+.success .summary {
+	background: #FFF;
+	text-align: center;
+	width: 460px;
+	margin: 0 auto 25px auto;
+	padding: 40px 30px 30px 30px;
+	border-radius: 5px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+}
+
+.success .summary p {
+	line-height: 1.4;
+	font-size: 14px;
+	margin-bottom: 18px;
+}
+
 /* Notifications */
 
 .notification, .warning {
