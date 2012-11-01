@@ -73,7 +73,7 @@ textarea {
 body {
 	font-size: 13px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	background: #F2F2F2;
+	background: #FFF;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -91,7 +91,12 @@ a {
 
 #header {
 	height: 69px;
+	margin: 0 -1px;
 	background: url(../image/header.png) #333;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(255, 255, 255, .2) 0 0 0 1px inset;
+	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(255, 255, 255, .2) 0 0 0 1px inset;
+	box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(255, 255, 255, .2) 0 0 0 1px inset;
+	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
 	position: relative;
 	z-index: 1000;
@@ -110,6 +115,15 @@ a {
 	text-shadow: rgba(0, 0, 0, 1) 0 1px;
 }
 
+/* Sub heading */
+
+h1.heading {
+	font-size: 32px;
+	text-align: center;
+	margin: 40px 0;
+	text-shadow: rgba(255, 255, 255, 1) 0 1px;
+}
+
 /* Main nav */
 
 nav#main {
@@ -120,13 +134,21 @@ nav#main {
 nav#main a {
 	margin-left: 20px;
 	text-decoration: none;
-	color: #999999;
+	color: #BFBFBF;
+	text-shadow: rgba(0, 0, 0, .7) 0 1px;
+}
+
+/* Wrap */
+
+#wrap {
+	background: #F2F2F2;
 }
 
 /* Footer */
 
 #footer {
 	padding: 50px 0;
+	border-top: 1px solid #E5E5E5;
 }
 
 #footer nav {
@@ -137,9 +159,8 @@ nav#main a {
 #footer nav h3 {
 	font-weight: bold;
 	font-size: 15px;
-	color: #78787A;
+	color: #727272;
 	margin-bottom: 12px;
-	text-shadow: rgba(255, 255, 255, .8) 0 -1px;
 }
 
 #footer nav li {
@@ -147,22 +168,20 @@ nav#main a {
 }
 
 #footer nav li a {
-	color: #B7B7BA;
+	color: #B2B2B2;
 	text-decoration: none;
 	padding-bottom: 6px;
-	text-shadow: rgba(255, 255, 255, .6) 0 -1px;
 	line-height: 18px;
 }
 
 #footer .brand {
-	color: #939596;
+	color: #727272;
 	float: right;
 }
 
 #footer .brand h1 {
-	font-weight: 700;
+	font-weight: bold;
 	font-size: 30px;
-	text-shadow: rgba(255, 255, 255, .8) 0 -1px;
 }
 
 /* Toasty breadcrumbs */
@@ -202,8 +221,7 @@ nav#main a {
 
 /* Content */
 
-#content {
-	padding: 30px 60px;
+.box {
 	background: #FFF;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -211,93 +229,26 @@ nav#main a {
 	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px;
 	box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px;
+	width: 730px;
+	margin: 0 auto;
 }
 
-#content.full {
-	margin: 50px 30px 0 30px;
-}
-
-#content.normal {
-	width: 820px;
-	margin: 50px auto 0 auto;
-}
-
-#content .part {
-	width: 500px;
-	float: left;
-}
-
-#content aside {
-	float: right;
-	width: 250px;
-}
-
-#content header {
-	margin-bottom: 30px;
-	padding-bottom: 30px;
-	font-weight: bold;
-	border-bottom: 1px solid #E5E5E5;
+.box header {
+	padding: 40px 40px 45px 40px;
 	text-align: center;
+	background: url(../image/pageheader-bg.png) no-repeat 0 100%;
 }
 
-#content header h1 {
-	font-size: 34px;
+.box header h1 {
+	font-size: 28px;
 	color: #222;
+	font-weight: bold;
 }
 
-#content header h2 {
+.box header h2 {
 	color: #666666;
 	font-size: 18px;
 	margin-top: 10px;
-}
-
-#content p {
-	margin-bottom: 20px;
-}
-
-#content h3{
-	font-weight: bold;
-	font-size: 16px;
-	margin-bottom: 8px;
-}
-
-#content ol {
-	list-style-type: lower-alpha;
-	padding-left: 40px;
-}
-
-#content ol li {
-	margin-bottom: 15px;
-	line-height: 20px;
-}
-
-#content p {
-	line-height: 20px !important;
-}
-
-/* Pages */
-
-.page {
-	position: relative;
-	z-index: 10;
-}
-
-.page .header {
-	padding: 40px 0;
-	text-align: center;
-	text-shadow: rgba(255, 255, 255, 1) 0 1px;
-}
-
-.page .header h1 {
-	color: #353637;
-	font-weight: bold;
-	font-size: 28px;
-}
-
-.page .header h2 {
-	color: #717476;
-	font-size: 18px;
-	margin-top: 5px;
 }
 
 /* Elements */
@@ -337,6 +288,7 @@ a.button {
 
 #view {
 	margin-top: 40px;
+	margin-bottom: 40px;
 	border-radius: 4px;
 	position: relative;
 }
@@ -421,11 +373,7 @@ a.button {
 	overflow: hidden;
 }
 
-.box {
-	padding: 30px 30px 25px 30px;
-}
-
-#content2 header, .box header {
+#content2 header {
 	border: 1px solid #000000;
 	margin: -30px -40px 30px -40px;
 	padding: 18px 30px;
@@ -448,7 +396,7 @@ a.button {
 	color: #FFF;
 }
 
-#content2 header h1, .box header h1 {
+#content2 header h1 {
 	font-size: 24px;
 	float: left;
 	font-weight: bold;
@@ -610,6 +558,7 @@ form.horizontal .form-row.error input, .form-row.error textarea {
 /* Contact Us */
 
 #contact .contact {
+	margin-bottom: 40px;
 }
 
 #contact .contact form {
@@ -666,7 +615,7 @@ form.horizontal .form-row.error input, .form-row.error textarea {
 	background: #FFF;
 	text-align: center;
 	width: 460px;
-	margin: 0 auto 25px auto;
+	margin: 0 auto 40px auto;
 	padding: 40px 30px 30px 30px;
 	border-radius: 5px;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;

@@ -7,6 +7,7 @@
 	overflow: hidden;
 	position: relative;
 	min-height: 250px;
+	margin-bottom: 40px;
 }
 
 #checkout .cart {
@@ -18,7 +19,6 @@
 	text-shadow: rgba(255, 255, 255, .5) 0 1px;
 	position: relative;
 	border-bottom: 1px solid #E5E5E5;
-	margin-bottom: 6px;
 }
 
 #checkout .cart li .thumb img {
@@ -220,7 +220,7 @@
 /* Checkout progress bar */
 
 #progress {
-	margin-bottom: 40px;
+	margin: 60px 0 40px 0;
 }
 
 #progress .bar {
@@ -246,7 +246,7 @@
 	background: #404040;
 	position: relative;
 	margin: 0 auto;
-	top: -22px;
+	top: -21px;
 	width: 32px;
 	height: 32px;
 	border-radius: 32px;

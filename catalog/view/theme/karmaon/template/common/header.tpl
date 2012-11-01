@@ -20,6 +20,7 @@
   <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/bootstrap.css" />
   <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/site.css" />
   <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/product.css" />
+  <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/information.css" />
   <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/home.css" />
   <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/about.css" />
   <link rel="stylesheet" type="text/css" href="catalog/view/theme/karmaon/stylesheet/checkout.css" />
@@ -51,3 +52,4 @@
         </nav>
     </div>
   </header>
+  <div id="wrap" class="clearfix">

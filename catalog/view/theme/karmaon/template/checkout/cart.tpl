@@ -1,81 +1,78 @@
 <?php echo $header; ?>
-<div class="page">
-  <div class="container clearfix">
-    <header class="header">
-      <h1><?php echo $heading_title; ?>
-        <?php if ($weight) { ?>
-          (<?php echo $weight; ?>)
-        <?php } ?>
-      </h1>
-    </header>
-    <?php if ($attention) { ?>
-      <div class="notification attention">
-        <?php echo $attention; ?>
-        <img src="catalog/view/theme/default/image/close.png" alt="" class="close" />
-      </div>
-    <?php } ?>
-    <?php if ($success) { ?>
-      <div class="notification success">
-        <?php echo $success; ?>
-        <img src="catalog/view/theme/default/image/close.png" alt="" class="close" />
-      </div>
-    <?php } ?>
-    <?php if ($error_warning) { ?>
-      <div class="notification warning">
-        <?php echo $error_warning; ?>
+<h1 class="heading">
+  <?php echo $heading_title; ?>
+  <?php if ($weight) { ?>
+    (<?php echo $weight; ?>)
+  <?php } ?>
+</h1>
+<div class="container clearfix">
+  <?php if ($attention) { ?>
+    <div class="notification attention">
+      <?php echo $attention; ?>
       <img src="catalog/view/theme/default/image/close.png" alt="" class="close" />
-      </div>
-    <?php } ?>
-    <div class="window clearfix">
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-        <ul class="cart">
-          <?php foreach ($products as $product) { ?>
-            <li class="clearfix">
-              <?php if ($product['thumb']) { ?>
-                <a href="<?php echo $product['href']; ?>" class="thumb">
-                  <img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" />
+    </div>
+  <?php } ?>
+  <?php if ($success) { ?>
+    <div class="notification success">
+      <?php echo $success; ?>
+      <img src="catalog/view/theme/default/image/close.png" alt="" class="close" />
+    </div>
+  <?php } ?>
+  <?php if ($error_warning) { ?>
+    <div class="notification warning">
+      <?php echo $error_warning; ?>
+    <img src="catalog/view/theme/default/image/close.png" alt="" class="close" />
+    </div>
+  <?php } ?>
+  <div class="window clearfix">
+    <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+      <ul class="cart">
+        <?php foreach ($products as $product) { ?>
+          <li class="clearfix">
+            <?php if ($product['thumb']) { ?>
+              <a href="<?php echo $product['href']; ?>" class="thumb">
+                <img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" />
+              </a>
+              <div class="details">
+                <a href="<?php echo $product['href']; ?>" class="name"><?php echo $product['name']; ?></a>
+                <h4><?php echo $product['model']; ?></h4>
+              </div>
+              <div class="controls">
+                <div class="quantity">
+                  <input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" />
+                  <input type="image" src="catalog/view/theme/default/image/update.png" alt="<?php echo $button_update; ?>" title="<?php echo $button_update; ?>" />
+                </div>
+                <a href="<?php echo $product['remove']; ?>" class="remove">
+                  <img src="catalog/view/theme/default/image/remove.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" />
                 </a>
-                <div class="details">
-                  <a href="<?php echo $product['href']; ?>" class="name"><?php echo $product['name']; ?></a>
-                  <h4><?php echo $product['model']; ?></h4>
-                </div>
-                <div class="controls">
-                  <div class="quantity">
-                    <input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" />
-                    <input type="image" src="catalog/view/theme/default/image/update.png" alt="<?php echo $button_update; ?>" title="<?php echo $button_update; ?>" />
-                  </div>
-                  <a href="<?php echo $product['remove']; ?>" class="remove">
-                    <img src="catalog/view/theme/default/image/remove.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" />
-                  </a>
-                </div>
-                <div class="total">
-                  <?php echo $product['total']; ?>
-                </div>
-              <?php } ?>
-            </li>
-          <?php } ?>
-        </ul>
-      </form>
-      <div class="overview">
-        <h2>Overview</h2>
-        <ul>
-          <?php if ($weight) { ?>
-            <li class="clearfix">
-              <span class="category">Total weight</span>
-              <span class="amount"><?php echo $weight; ?></span>
-            </li>
-          <?php } ?>
-          <?php foreach ($totals as $total) { ?>
-            <li class="clearfix">
-              <span class="category"><?php echo $total['title']; ?></span>
-              <span class="amount"><?php echo $total['text']; ?></span>
-            </li>
-          <?php } ?>
-        </ul>
-        <div class="buttons clearfix">
-          <a href="<?php echo $checkout; ?>" class="primary button green"><?php echo $button_checkout; ?></a>
-          <a href="/" class="secondary">Continue</a>
-        </div>
+              </div>
+              <div class="total">
+                <?php echo $product['total']; ?>
+              </div>
+            <?php } ?>
+          </li>
+        <?php } ?>
+      </ul>
+    </form>
+    <div class="overview">
+      <h2>Overview</h2>
+      <ul>
+        <?php if ($weight) { ?>
+          <li class="clearfix">
+            <span class="category">Total weight</span>
+            <span class="amount"><?php echo $weight; ?></span>
+          </li>
+        <?php } ?>
+        <?php foreach ($totals as $total) { ?>
+          <li class="clearfix">
+            <span class="category"><?php echo $total['title']; ?></span>
+            <span class="amount"><?php echo $total['text']; ?></span>
+          </li>
+        <?php } ?>
+      </ul>
+      <div class="buttons clearfix">
+        <a href="<?php echo $checkout; ?>" class="primary button green"><?php echo $button_checkout; ?></a>
+        <a href="/" class="secondary">Continue</a>
       </div>
     </div>
   </div>

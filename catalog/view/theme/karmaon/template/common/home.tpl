@@ -40,7 +40,7 @@
       </div>
     </div>
   </section>
-  <section class="basic page">
+  <section class="basic">
     <div class="container">
       <header class="header">
         <h1>Next generation Bitcoin mining hardware.</h1>
@@ -99,11 +99,9 @@
       </ul>
     </div>
   </section>
-  <div class="page">
+  <section class="final">
     <div class="container">
-      <header class="header">
-        <h1>What you can expect from us...</h1>
-      </header>
+      <h1>What you can expect from us...</h1>
       <section class="features clearfix">
         <dl>
           <dt>We're experienced</dt>
@@ -146,6 +144,7 @@
           </li>
         </ul>
       </section>
-    </div>
+    </section>
   </div>
+</div>
 <?php echo $footer; ?>

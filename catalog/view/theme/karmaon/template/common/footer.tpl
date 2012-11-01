@@ -1,3 +1,4 @@
+        </div>
         <footer id="footer">
           <div class="container clearfix">
             <nav>
@@ -19,7 +20,6 @@
             <nav>
               <h3><?php echo $text_information; ?></h3>
               <ul>
-                <li><a href="<?php echo $about; ?>"><?php echo $text_about; ?></a></li>
                 <?php foreach ($informations as $information) { ?>
                   <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
                 <?php } ?>

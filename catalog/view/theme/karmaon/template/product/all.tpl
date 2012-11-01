@@ -1,19 +1,17 @@
 <?php echo $header; ?>
-<div class="page">
-    <div class="container">
-      <header class="header">
-        <h1><?php echo $heading_title; ?></h1>
-      </header>
-      <ul class="products clearfix">
-        <?php foreach ($products as $product) { ?>
-          <a href="<?php echo $product['href']; ?>">
-            <li>
-              <h3><?php echo $product['name']; ?></h3>
-              <img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" />
-            </li>
-          </a>
-        <?php } ?>
-      </ul>
-    </div>
+<h1 class="heading"><?php echo $heading_title; ?></h1>
+<div class="container">
+  <ul class="products clearfix">
+    <?php foreach ($products as $product) { ?>
+      <li>
+        <a href="<?php echo $product['href']; ?>">
+          <img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" />
+          <div class="info">
+            <h3><?php echo $product['name']; ?></h3>
+          </div>
+        </a>
+      </li>
+    <?php } ?>
+  </ul>
 </div>
 <?php echo $footer; ?>

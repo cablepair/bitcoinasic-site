@@ -1,60 +1,55 @@
 <?php echo $header; ?>	
-<div class="page">
-	<div class="container clearfix">
-		<header class="header">
-			<h1><?php echo $heading_title; ?></h1>
-		</header>
-		<div id="progress">
-			<div class="bar"></div>
-			<ul class="clearfix">
-				<li id="checkout-progress">
-					<div class="arrow"></div>
-					<h3>Checkout Options</h3>
-				</li>
-				<li id="billing-details-progress">
-					<div class="arrow"></div>
-					<h3>Billing Details</h3>
-				</li>
-				<li id="delivery-details-progress">
-					<div class="arrow"></div>
-					<h3>Delivery Details</h3>
-				</li>
-				<li id="delivery-method-progress">
-					<div class="arrow"></div>
-					<h3>Delivery Method</h3>
-				</li>
-				<li id="payment-method-progress">
-					<div class="arrow"></div>
-					<h3>Payment Method</h3>
-				</li>
-				<li id="confirmation-progress">
-					<div class="arrow"></div>
-					<h3>Confirmation</h3>
-				</li>
-			</ul>
-		</div>
-		<div class="window clearfix">
-			<div id="checkout-main">
-			</div>
-	    <div class="overview">
-	      <h2>Overview</h2>
-	      <ul>
-		      <?php if ($weight) { ?>
-	          <li class="clearfix">
-	            <span class="category">Total weight</span>
-	            <span class="amount"><?php echo $weight; ?></span>
-	          </li>
-	        <?php } ?>
-	        <?php foreach ($totals as $total) { ?>
-	          <li class="clearfix">
-	            <span class="category"><?php echo $total['title']; ?></span>
-	            <span class="amount"><?php echo $total['text']; ?></span>
-	          </li>
-	        <?php } ?>
-	      </ul>
-	    </div>
-	  </div>
+<div class="container clearfix">
+	<div id="progress">
+		<div class="bar"></div>
+		<ul class="clearfix">
+			<li id="checkout-progress">
+				<div class="arrow"></div>
+				<h3>Checkout Options</h3>
+			</li>
+			<li id="billing-details-progress">
+				<div class="arrow"></div>
+				<h3>Billing Details</h3>
+			</li>
+			<li id="delivery-details-progress">
+				<div class="arrow"></div>
+				<h3>Delivery Details</h3>
+			</li>
+			<li id="delivery-method-progress">
+				<div class="arrow"></div>
+				<h3>Delivery Method</h3>
+			</li>
+			<li id="payment-method-progress">
+				<div class="arrow"></div>
+				<h3>Payment Method</h3>
+			</li>
+			<li id="confirmation-progress">
+				<div class="arrow"></div>
+				<h3>Confirmation</h3>
+			</li>
+		</ul>
 	</div>
+	<div class="window clearfix">
+		<div id="checkout-main">
+		</div>
+    <div class="overview">
+      <h2>Overview</h2>
+      <ul>
+	      <?php if ($weight) { ?>
+          <li class="clearfix">
+            <span class="category">Total weight</span>
+            <span class="amount"><?php echo $weight; ?></span>
+          </li>
+        <?php } ?>
+        <?php foreach ($totals as $total) { ?>
+          <li class="clearfix">
+            <span class="category"><?php echo $total['title']; ?></span>
+            <span class="amount"><?php echo $total['text']; ?></span>
+          </li>
+        <?php } ?>
+      </ul>
+    </div>
+  </div>
 </div>
 <script type="text/javascript">
 	function errorField(name, error) {

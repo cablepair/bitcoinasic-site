@@ -5,13 +5,7 @@ class ControllerInformationInformation extends Controller {
 		
 		$this->load->model('catalog/information');
 		
-		$this->data['breadcrumbs'] = array();
-		
-      	$this->data['breadcrumbs'][] = array(
-        	'text'      => $this->language->get('text_home'),
-			'href'      => $this->url->link('common/home'),
-        	'separator' => false
-      	);
+		$this->document->setBodyId('information');
 		
 		if (isset($this->request->get['information_id'])) {
 			$information_id = (int)$this->request->get['information_id'];

@@ -13,7 +13,7 @@ class ControllerProductAll extends Controller {
 				
 		foreach ($results as $result) {
 			if ($result['image']) {
-				$image = $this->model_tool_image->resize($result['image'], 445, 445);
+				$image = $this->model_tool_image->resize($result['image'], 443, 300);
 			} else {
 				$image = false;
 			}
