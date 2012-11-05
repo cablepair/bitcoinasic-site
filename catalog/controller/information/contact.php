@@ -24,22 +24,8 @@ class ControllerInformationContact extends Controller {
 	  		$mail->setText(strip_tags(html_entity_decode($this->request->post['enquiry'], ENT_QUOTES, 'UTF-8')));
       		$mail->send();
 
-	  		$this->redirect($this->url->link('information/contact/success'));
+	  		$this->redirect($this->url->link('information/contact/success', '', 'SSL'));
     	}
-
-      	$this->data['breadcrumbs'] = array();
-
-      	$this->data['breadcrumbs'][] = array(
-        	'text'      => $this->language->get('text_home'),
-			'href'      => $this->url->link('common/home'),        	
-        	'separator' => false
-      	);
-
-      	$this->data['breadcrumbs'][] = array(
-        	'text'      => $this->language->get('heading_title'),
-			'href'      => $this->url->link('information/contact'),
-        	'separator' => $this->language->get('text_separator')
-      	);	
 			
     	$this->data['heading_title'] = $this->language->get('heading_title');
 
@@ -80,7 +66,7 @@ class ControllerInformationContact extends Controller {
 
     	$this->data['button_continue'] = $this->language->get('button_continue');
     
-		$this->data['action'] = $this->url->link('information/contact');
+		$this->data['action'] = $this->url->link('information/contact', '', 'SSL');
 		$this->data['store'] = $this->config->get('config_name');
     	$this->data['address'] = nl2br($this->config->get('config_address'));
     	$this->data['telephone'] = $this->config->get('config_telephone');
