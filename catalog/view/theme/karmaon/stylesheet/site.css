@@ -241,7 +241,7 @@ nav#main a {
 }
 
 .box header h1 {
-	font-size: 28px;
+	font-size: 25px;
 	color: #222;
 	font-weight: bold;
 }
@@ -249,7 +249,7 @@ nav#main a {
 .box header h2 {
 	color: #666666;
 	font-size: 18px;
-	margin-top: 10px;
+	margin-top: 12px;
 }
 
 /* Elements */
