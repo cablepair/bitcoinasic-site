@@ -7,7 +7,7 @@
             BTCFPGA's <strong>bASIC</strong> is the next generation Bitcoin mining hardware that offers significant improvements from GPU-based mining rigs and FPGAs.
           </p>
           <p>
-            Currently 2nd batch pre-orders are being accepted, we are scheduled to begin shipping the 2nd batch in <strong>January of 2013</strong>.
+            Currently 2nd batch pre-orders are being accepted, we are scheduled to begin shipping the 2nd batch in <strong>February of 2013</strong>.
           </p>
           <div class="buttons">
             <a href="<?php echo $learn_more; ?>" class="cta button green">Pre-order Today</a>
@@ -18,17 +18,17 @@
           <div class="title">bASIC Models</div>
           <div class="models clearfix">
             <div class="model low-model">
-                <h2>54 GH/s</h2>
+                <h2>72 GH/s</h2>
                 <h3>$1069.99</h3>
                 <span class="hint">or</span>
             </div>
             <div class="model high-model">
-              <h2>27 GH/s</h2>
+              <h2>36 GH/s</h2>
               <h3>$599.99</h3>
             </div>
           </div>
           <div class="shipping">
-              2nd Batch Pre-Orders Scheduled to Ship January 2013
+              2nd Batch Pre-Orders Scheduled to Ship February 2013
           </div>
         </div>
         <div class="window first">
@@ -44,7 +44,7 @@
     <div class="container">
       <header class="header">
         <h1>Next generation Bitcoin mining hardware.</h1>
-        <h2>Starting at just $599.99 for 27 Gh/s.</h2>
+        <h2>Starting at just $599.99 for 36 Gh/s.</h2>
       </header>
       <div class="box">
         <table class="compare">
@@ -58,15 +58,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <th class="product">27 GH/s bASIC</th>
+                    <th class="product">36 GH/s bASIC</th>
                     <td>$599.99</td>
-                    <td>6 x 90nm ASIC SHA-256 Bitcoin hashing cluster</td>
+                    <td>8 x 90nm ASIC SHA-256 Bitcoin hashing cluster</td>
                     <td>45.00</td>
                 </tr>
                 <tr>
-                    <th class="product">54 GH/s bASIC</th>
+                    <th class="product">72 GH/s bASIC</th>
                     <td>$1069.99</td>
-                    <td>Dual 6 x 90nm ASIC SHA-256 Bitcoin hashing clusters</td>
+                    <td>Dual 8 x 90nm ASIC SHA-256 Bitcoin hashing clusters</td>
                     <td>50.46</td>
                 </tr>
             </tbody>
